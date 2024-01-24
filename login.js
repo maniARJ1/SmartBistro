@@ -1,8 +1,13 @@
+function login() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
 
-        function login() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            // Hier kannst du die Logik für die Überprüfung von Benutzername und Passwort implementieren.
-            // Zum Beispiel: if (username === 'beispiel' && password === 'passwort') { ... }
-        }
+    // Überprüfung von Benutzername und Passwort
+    if (username === 'JBLMN' && password === 'Spengergasse') {
+        // Authentifizierung erfolgreich, weiterleiten zur Ziel-Seite
+        window.location.href = 'Seite.html';
+    } else {
+        // Authentifizierung fehlgeschlagen, zeige eine Fehlermeldung
+        alert('Benutzername oder Passwort ist falsch. Bitte versuche es erneut.');
+    }
+}

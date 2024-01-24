@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrieren - SmartBistro</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+  <div class="banner">   
+    <div id="register-container">
+        <form id="register-form">
+            <label for="firstname">Vorname:</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="lastname">Nachname:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="student-id">Schüler-ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+
+            <label for="nationality">Nationalität:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="birthdate">Geburtsdatum:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Passwort bestätigen:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="button" onclick="register()">Registrieren</button>
+        </form>
+    </div> 
+  </div>
+</body>
+</html>
