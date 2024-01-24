@@ -1,34 +1,34 @@
 body {
     font-family: 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     margin: 0;
-    background-color: #282c34;
-    color: white;
+    padding: 0;
 }
 
 .banner {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(LOGO\(1\).png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Hamburger.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #login-container {
-    background-color: #383c4a;
+    background-color: rgba(255, 255, 255, 0.9); /* Leicht durchsichtiges Weiß */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.5s ease-out;
     width: 300px;
-    margin: 0 auto; /* Zentrale Positionierung ohne horizontalen Abstand */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#login-container h2 {
+    font-size: 24px;
+    font-weight: bold; /* Fette Schrift für Titel */
+    color: #333;
 }
 
 @keyframes fadeIn {
@@ -46,31 +46,36 @@ body {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
-    border: none;
+    border: 2px solid #ddd; /* Helle Graue Ränder */
     border-radius: 4px;
-    background-color: #4a4e5a;
-    color: white;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 #login-form input:focus {
-    background-color: #565a66;
-    color: #fff;
+    background-color: #ddd;
+    border-color: #555; /* Dunkelgrauer Rahmen im Fokus */
 }
 
 #login-form button {
-    width: calc(100%);
-    padding: 10px;
-    background-color: #61dafb;
-    color: #282c34;
+    width: calc(100% - 20px);
+    padding: 15px; /* Größere Polsterung */
+    font-size: 16px; /* Größere Schriftgröße */
+    background-color: #333;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold; /* Fette Schrift für den Anmelden-Button */
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#login-form label {
+    font-weight: bold; /* Fette Schrift für Benutzername und Passwort */
 }
 
 #login-form button:hover {
-    background-color: #4fa3d1;
+    background-color: #555;
 }
 
 #login-form button:active {
@@ -80,11 +85,11 @@ body {
 .register-link {
     margin-top: 10px;
     text-align: center;
-    color: #fff;
+    color: #000; /* Schwarze Schrift */
 }
 
 .register-link a {
-    color: #ff0000; /* Rote Farbe für den Registrieren-Link */
+    color: #ff0000;
     text-decoration: none;
     font-weight: bold;
 }

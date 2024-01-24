@@ -1,78 +1,75 @@
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
-    background-color: #282c34;
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Hamburger.jpg') center/cover no-repeat fixed; /* Hintergrundbild im Body */
 }
 
-.banner {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-#register-container {
-    background-color: #383c4a;
-    padding: 20px;
+.register-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Weiße Hintergrundbox mit Transparenz */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 0.5s ease-out;
+    overflow: hidden;
     width: 300px;
-    margin: auto;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 0.5s forwards; /* Coole Übergänge mit Animation */
+    margin-left: 30px;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-#register-form label {
-    margin-top: 10px;
-    display: block;
+.register-box h2 {
+    color: #333; /* Dunkelgraue Schriftfarbe */
+    margin-bottom: 20px;
+    font-weight: bold; /* Fettdruck für Überschrift */
 }
 
-#register-form input {
-    width: calc(100% - 20px);
-    padding: 10px;
+.input-group {
     margin-bottom: 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #4a4e5a;
-    color: white;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
 }
 
-#register-form input:focus {
-    background-color: #565a66;
-    color: #fff;
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666; /* Graue Schriftfarbe */
 }
 
-#register-form button {
-    width: calc(100%);
+.input-group input {
+    width: 100%;
     padding: 10px;
-    background-color: #ff0000; /* Rote Farbe für den Registrieren-Button */
-    color: #282c34;
+    border: 2px solid #6b6565; /* Schwarze Umrandung */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #555; /* Grüner Hintergrund */
+    color: #fff; /* Weiße Schriftfarbe */
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-#register-form button:hover {
-    background-color: #cc0000; /* Dunkleres Rot beim Hover */
-}
-
-#register-form button:active {
-    transform: scale(0.95);
+button:hover {
+    background-color: #070707; /* Dunkleres Grün beim Hover */
 }

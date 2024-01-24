@@ -5,36 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrieren - SmartBistro</title>
     <link rel="stylesheet" href="Register.css">
-    <link rel="stylesheet" href="Register.js">
+    <script src="Register.js" defer></script>
 </head>
 <body>
-  <div class="banner">   
-    <div id="register-container">
-        <form id="register-form">
-            <label for="firstname">Vorname:</label>
-            <input type="text" id="firstname" name="firstname" required>
+    <div class="container">
+        <div class="register-box">
+            <h2>Registrieren</h2>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="firstname">Vorname:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
 
-            <label for="lastname">Nachname:</label>
-            <input type="text" id="lastname" name="lastname" required>
+                <div class="input-group">
+                    <label for="lastname">Nachname:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
 
-            <label for="student-id">Schüler-ID:</label>
-            <input type="text" id="student-id" name="student-id" required>
-            
-            <label for="birthdate">Geburtsdatum:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
+                <div class="input-group">
+                    <label for="student-id">Schüler-ID:</label>
+                    <input type="text" id="student-id" name="student-id" required>
+                </div>
 
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
+                <div class="input-group">
+                    <label for="birthdate">Geburtsdatum:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
 
-            <label for="password">Passwort:</label>
-            <input type="password" id="password" name="password" required>
+                <div class="input-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="confirm-password">Passwort bestätigen:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="input-group">
+                    <label for="password">Passwort:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-            <button type="button" onclick="register()">Registrieren</button>
-        </form>
-    </div> 
-  </div>
+                <div class="input-group">
+                    <label for="confirm-password">Passwort bestätigen:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <button type="button" onclick="register()">Registrieren</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

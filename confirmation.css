@@ -5,8 +5,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #282c34;
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Hamburger.jpg) center/cover no-repeat fixed;
 }
 
 .banner {
@@ -24,6 +23,11 @@ body {
     animation: fadeIn 0.5s ease-out;
     width: 300px;
     text-align: center;
+    margin: auto; /* Zentrale Positionierung */
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    text-align: center;
 }
 
 @keyframes fadeIn {
@@ -38,6 +42,7 @@ body {
 }
 
 #confirmation-container h2 {
+    color: #00cc00; /* Grüne Farbe für den Erfolgstitel */
     margin-bottom: 15px;
 }
 
@@ -49,4 +54,11 @@ body {
 
 #confirmation-container a:hover {
     text-decoration: underline;
+}
+
+#confirmation-container p {
+    color: #fff; /* Weiße Farbe für den Text, der auf die E-Mail hinweist */
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
 }
