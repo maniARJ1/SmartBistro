@@ -3,7 +3,6 @@ function register() {
     var firstname = document.getElementById('firstname').value;
     var lastname = document.getElementById('lastname').value;
     var studentId = document.getElementById('student-id').value;
-    var nationality = document.getElementById('nationality').value;
     var birthdate = document.getElementById('birthdate').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
